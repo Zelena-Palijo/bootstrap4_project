@@ -66,7 +66,7 @@
             <h3>Now Playing:</h3>
             <ul class="list-group">
               <li class="list-group-item">
-                <a class="nav-link" href="#">Kong: Skull Island</a>
+                <a class="nav-link" href="#card-title">Kong: Skull Island</a>
               </li>
               <li class="list-group-item">
                 <a class="nav-link" href="#">Ghost in the Shell</a>
@@ -140,11 +140,13 @@
     
       <div class="text-center">
           <form>
-            <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
+            <h1 class="text-primary my-5">Stay current with all the movies!</h1>
             <div class="form-group">
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receive free movie details">
+              Sign up!
+            </button>
           </form>
       </div>
 
@@ -174,10 +176,16 @@
     
     </div>
 
-    <!-- Optional JavaScript -->
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+      $('.popover-dismiss').popover({
+          trigger: 'focus'
+        })
+    </script>
   </body>
 </html>
